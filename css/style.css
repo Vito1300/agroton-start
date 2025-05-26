@@ -34,13 +34,22 @@
   font-display: swap;
 }
 body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   color: #0e0d0d;
   background-color: #fdfdf0;
+  line-height: 1.35;
 }
 
 .container {
   max-width: 1440px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.container-big {
+  max-width: 1840px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -50,7 +59,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 30px 0px;
-  font-family: 'Nunito Sans';
   font-weight: 500;
 }
 
@@ -70,4 +78,72 @@ body {
   background-color: #0e0d0d;
   color: white;
   border-radius: 50px;
+}
+
+.about {
+  margin-bottom: 180px;
+}
+
+.about__top {
+  text-align: center;
+  color: #fdfdf0;
+  background-image: url('../images/about-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-transform: uppercase;
+  min-height: 748px;
+  border-radius: 20px;
+}
+
+.about__title {
+  font-family: 'WorkSans-SemiBold', sans-serif;
+  font-weight: 600;
+  font-size: 250px;
+  line-height: 0.9;
+  padding-top: 85px;
+}
+
+.about__text {
+  font-family: 'WorkSans-Medium', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.about__achievements {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+.about__achievement {
+  border-radius: 20px;
+  background-color: #f4f4e7;
+  max-width: 580px;
+  margin-top: -55px;
+  padding: 14px 10px;
+  display: flex;
+  gap: 0px 25px;
+}
+.about__achievement-imgbox {
+  min-width: 214px;
+  position: relative;
+}
+
+.about__achievement-arrow {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.about__achievement-title-text {
+  font-weight: 300;
+}
+.text--bold {
+  font-weight: 600;
+}
+.text--color {
+  font-weight: 600;
+  color: #f2a531;
 }
