@@ -199,6 +199,8 @@ body {
   font-size: 18px;
   margin-bottom: 45px;
   padding-right: 50px;
+  line-height: 1.5;
+  padding-top: 5px;
 }
 
 .about__progress-boxtext .text--bold {
@@ -217,6 +219,10 @@ body {
   border-bottom: 1px solid rgba(14, 13, 13, 0.23);
 }
 
+.about__progress-item + .about__progress-item {
+  padding-top: 20px;
+}
+
 .about__progress-item dt {
   font-size: 18px;
   font-weight: 500;
@@ -229,4 +235,73 @@ body {
 
 .about__progress-item dd {
   opacity: 0.71;
+}
+
+.products__wrapper {
+  padding: 50px 0;
+  background-color: #f4f4e7;
+  border-radius: 20px;
+}
+
+.products__title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'WorkSans-Medium';
+  margin-bottom: 40px;
+  text-align: center;
+}
+.products__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.products__item {
+  border-radius: 10px;
+  min-height: 322px;
+  margin-bottom: 12px;
+  padding: 50px 24px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.products__item-title {
+  margin-bottom: 14px;
+  font-size: 32px;
+  font-weight: 300;
+  font-family: 'WorkSans-Regular', sans-serif;
+}
+
+.products__item-btn {
+  position: absolute;
+  bottom: -12px;
+  left: -8px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.products__item:nth-child(odd) {
+  color: white;
+}
+
+.products__link {
+  display: block;
+  margin-bottom: 35px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #0e0d0d;
+  border-radius: 96px;
+  padding: 19px 97px 19px 38px;
+  position: relative;
+  color: white;
+  width: 242px;
+  margin: 0 auto;
+}
+
+.products__link svg {
+  position: absolute;
+  right: 4px;
+  top: 3px;
 }
