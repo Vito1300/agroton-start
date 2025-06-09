@@ -370,6 +370,17 @@ body {
   border-radius: 10px;
   gap: 0px 19px;
   margin-bottom: 15px;
+  position: relative;
+}
+
+.partners__box-top::before {
+  position: absolute;
+  content: '';
+  background-image: url('../images/logo-min.svg');
+  width: 63px;
+  height: 56px;
+  top: 30px;
+  left: 20px;
 }
 
 .partners__box-list {
@@ -417,4 +428,115 @@ body {
 .partners__box-text span {
   color: #f2a531;
   font-weight: 700;
+}
+
+.blog {
+  margin-bottom: 80px;
+}
+
+.blog__wrapper {
+  background-color: #f4f4e7;
+  border-radius: 20px;
+  padding: 100px 0;
+}
+
+.blog__title {
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  font-family: 'WorkSans-Medium', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.blog__items {
+  display: grid;
+  grid-template-columns: 580px auto;
+  gap: 32px 44px;
+  grid-template-rows: 1fr 1fr;
+}
+
+.blog__item-big {
+  grid-row: 1 / -1;
+}
+.blog__item-small {
+  display: flex;
+  align-items: center;
+  gap: 0 24px;
+}
+
+.blog__item-info {
+  color: #f2a531;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.blog__item-big .blog__item-img {
+  margin-bottom: 32px;
+}
+
+.blog__item-titlelink {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.blog__item-title {
+  font-size: 24px;
+  font-family: 'WorkSans-Medium', sans-serif;
+  font-weight: 500pos;
+  color: #101828;
+  position: relative;
+}
+
+.blog__item-title::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 25px;
+  background-image: url('../images/blog-arrow.svg');
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.blog__item-text {
+  color: #667085;
+}
+
+.footer {
+  background-color: #0e0d0d;
+  padding: 100px 0;
+  color: white;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-right: 100px;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-top: 1px solid white;
+  font-size: 14px;
+}
+
+.footer__element-title {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.footer__item + .footer__item {
+  padding-top: 15px;
+}
+
+.footer__item-adress {
+  font-style: normal;
 }
