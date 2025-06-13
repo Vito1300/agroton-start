@@ -33,6 +33,11 @@
   font-weight: 600;
   font-display: swap;
 }
+
+.menu__btn {
+  display: none;
+}
+
 body {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
@@ -247,7 +252,7 @@ body {
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 500;
-  font-family: 'WorkSans-Medium';
+  font-family: 'WorkSans-Medium' sans-serif;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -347,6 +352,7 @@ body {
   max-width: 580px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .partners__info-title {
@@ -488,6 +494,7 @@ body {
   font-weight: 500pos;
   color: #101828;
   position: relative;
+  padding-right: 30px;
 }
 
 .blog__item-title::after {
@@ -516,6 +523,7 @@ body {
   justify-content: space-between;
   margin-bottom: 30px;
   padding-right: 100px;
+  gap: 20px;
 }
 
 .footer__bottom {
@@ -539,4 +547,287 @@ body {
 
 .footer__item-adress {
   font-style: normal;
+}
+
+@media (max-width: 1600px) {
+  .container-big {
+    padding: 0;
+  }
+  .slogan__title {
+    font-size: 140px;
+  }
+  .slogan__text {
+    font-size: 26px;
+  }
+  .slogan__img {
+    margin-top: 75px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .about__title {
+    font-size: 140px;
+  }
+  .about__achievement {
+    gap: 20px;
+  }
+  .about__achievements {
+    gap: 20px;
+  }
+  .about__progress-box {
+    gap: 0 20px;
+  }
+  .parnters__inner {
+    gap: 20px;
+  }
+  .blog__items {
+    gap: 20px;
+    grid-template-columns: 380px auto;
+  }
+  .partners__info {
+    max-width: 350px;
+  }
+}
+@media (max-width: 1148px) {
+  .blog__items {
+    grid-template-columns: 1fr;
+  }
+  .blog__item-titlelink {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 980px) {
+  .about__title {
+    font-size: 100px;
+  }
+  .about__text {
+    font-size: 24px;
+  }
+  .about__achievement {
+    flex-wrap: wrap;
+  }
+  .about__stats {
+    gap: 20px;
+  }
+  .blog__item-img {
+    width: 100%;
+  }
+  .partners__inner {
+    flex-wrap: wrap;
+  }
+  .partners__info {
+    max-width: 100%;
+  }
+  .partners__box {
+    width: 100%;
+  }
+  .menu__btn {
+    display: flex;
+    width: 40px;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    z-index: 5;
+  }
+  .menu {
+    order: 1;
+  }
+  .menu__btn span {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+  }
+  .menu__list {
+    z-index: 4;
+    overflow: hidden;
+    position: absolute;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    place-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease;
+  }
+  .menu__list.menu--active {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 870px) {
+  .about__progress-text {
+    font-size: 28px;
+  }
+  .about__progress-img {
+    width: 100%;
+    object-fit: cover;
+    height: 340px;
+  }
+  .about__progress-box {
+    flex-wrap: wrap;
+  }
+  .products__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .slogan__title {
+    font-size: 64px;
+  }
+  .slogan__img {
+    margin-top: -35px;
+  }
+  .footer__top {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 790px) {
+  .footer__top {
+    flex-wrap: wrap;
+  }
+  .footer_logo {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 678px) {
+  .about__stats {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .about__stats-item {
+    width: 100%;
+  }
+  .bloga__item-small {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .partners__box-text {
+    padding: 20px;
+  }
+  .partners__box-top {
+    flex-wrap: wrap;
+  }
+  .partners__box-top img {
+    width: 100%;
+  }
+  .partners__box-list {
+    margin-top: 120px;
+  }
+  .blog__item-small {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer__element {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .footer__bottom {
+    display: block;
+  }
+  .footer__bottom-item {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 510px) {
+  .about {
+    margin-bottom: 25px;
+  }
+  .about__achievements {
+    flex-wrap: nowrap;
+  }
+  .about__title {
+    font-size: 64px;
+  }
+  .about__text {
+    font-size: 18px;
+  }
+  .about__achievement-img {
+    width: 100%;
+  }
+  .about__achievement-imgbox {
+    min-width: 100%;
+  }
+  .about__top {
+    min-height: 440px;
+  }
+  .about__achievements {
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  .about__stats {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about__progress-text {
+    font-size: 22px;
+  }
+  .about {
+    margin-bottom: 50px;
+  }
+  .about__progress-item {
+    display: block;
+  }
+  .about__progress-item dd {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .products__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .products__item-title {
+    font-size: 24px;
+  }
+  .products__title {
+    font-size: 24px;
+  }
+  .slogan {
+    padding-top: 30px;
+  }
+  .slogan__text {
+    font-size: 18px;
+  }
+  .partners {
+    padding: 50px 0;
+  }
+  .partners__info-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .partners__box-list {
+    padding-left: 0;
+  }
+  .blog__wrapper {
+    padding: 50px 0px;
+  }
+  .blog__title {
+    font-size: 28px;
+  }
+  .footer {
+    padding: 50px 0;
+  }
+  .header__inner {
+    flex-wrap: wrap;
+    gap: 20px 65px;
+  }
+  .menu {
+    order: 0;
+  }
+  .header__contacts {
+    margin-left: auto;
+  }
 }
